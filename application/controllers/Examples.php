@@ -19,7 +19,7 @@ class Examples extends CI_Controller {
 	
 	public function tes(){
 		$this->load->model('example_model'); 
-		$this->data['record'] = $this->example_model->get_profil('KANWIL ACEH');
+		$this->data['record'] = $this->example_model->get_profil();
 		//$this->load->view('header_view', $this->data);
 		$this->load->view('example_view', $this->data);
 		//$this->load->view('footer_view');

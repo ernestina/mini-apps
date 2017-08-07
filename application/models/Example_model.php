@@ -13,8 +13,9 @@ class Example_model extends CI_Model {
 		$this->db->select('nama_org');
 		$this->db->from('d_user');
 		if($filter != null){
-			$this->db->where('nama_org', $filter);
+			$this->db->where('kd_d_user', $filter);
 		}
+        //$sql = "select kd_d_user, nama_org from d_user where";
 		$query = $this->db->get(); 
 		return $query->result();		
 	}
