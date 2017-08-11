@@ -11,7 +11,7 @@ class akun_controller extends CI_Controller {
 
 	public function index(){	
 		$this->load->model('akun_model');
-		$this->data['record'] =$this->akun_model->get_profil(527010);
+		$this->data['record'] =$this->akun_model->get_profil();
 		$this->load->view('akun_view', $this->data);
 	}
 
